@@ -18,62 +18,61 @@ class Solution {
             nums = nums1;
         }
         else{
-        while(index < totalLength ){
-           if(index1 != length1-1 && index2 != length2 -1){
-                   if(nums1[index1]<nums2[index2])
-                   {
-                       nums[index] = nums1[index1];
-                       index1++;
-                       index++;
-                   }
-                   else{
-                    nums[index] = nums2[index2];
-                    index2++;
-                    index++;
-                   }
-               }
-            else if(index1 == length1-1 && index2 == length2 -1){
-                if(nums1[index1]<nums2[index2]){
-                    nums[index] = nums1[index1];
-                    nums[index+1]=nums2[index2];
-                }
-                else{
-                    nums[index] = nums2[index2];
-                    nums[index+1]=nums1[index1];
-                }
-                if(totalLength%2 == 0){
-            return (double)(nums[totalLength/2]+nums[totalLength/2-1])/2;
+          while(index < totalLength ){
+             if(index1 != length1-1 && index2 != length2 -1){
+                 if(nums1[index1]<nums2[index2]){
+                     nums[index] = nums1[index1];
+                     index1++;
+                     index++;
+                 }
+                 else{
+                     nums[index] = nums2[index2];
+                     index2++;
+                     index++;
+                 }
+             }
+             else if(index1 == length1-1 && index2 == length2 -1){
+                 if(nums1[index1]<nums2[index2]){
+                     nums[index] = nums1[index1];
+                     nums[index+1]=nums2[index2];
+                 }
+                 else{
+                     nums[index] = nums2[index2];
+                     nums[index+1]=nums1[index1];
+                 }
+                 if(totalLength%2 == 0){
+                     return (double)(nums[totalLength/2]+nums[totalLength/2-1])/2;
+                 }
+                 else{
+                     return (double) nums[totalLength/2];
+                 }
+             }
+             else if(index1 == length1-1){
+                 if(nums1[index1]<nums2[index2] && flag1 == 0){
+                     nums[index] = nums1[index1];
+                     index++;
+                     flag1 = 1;
+                 }
+                 else{
+                     nums[index] = nums2[index2];
+                     index++;
+                     index2++;
+                 }
+             }
+             else{
+                 if(nums2[index2]<nums1[index1] && flag2 == 0){
+                     nums[index] = nums2[index2];
+                     index++;
+                     flag2 = 1;
+                 }
+                 else{
+                     nums[index] = nums1[index1];
+                     index++;
+                     index1++;
+                 }
+             }
+          }
         }
-        else{
-            return (double) nums[totalLength/2];
-        }
-            }
-               else if(index1 == length1-1){
-                   if(nums1[index1]<nums2[index2] && flag1 == 0){
-                       nums[index] = nums1[index1];
-                       index++;
-                       flag1 = 1;
-                   }
-                   else{
-                       nums[index] = nums2[index2];
-                       index++;
-                       index2++;
-                   }
-               }
-               else{
-                       if(nums2[index2]<nums1[index1] && flag2 == 0){
-                           nums[index] = nums2[index2];
-                           index++;
-                           flag2 = 1;
-                           
-                       }
-                       else{
-                           nums[index] = nums1[index1];
-                           index++;
-                           index1++;
-                       }
-            }
-        }}
         if(totalLength%2 == 0){
             return (double)(nums[totalLength/2]+nums[totalLength/2-1])/2;
         }
