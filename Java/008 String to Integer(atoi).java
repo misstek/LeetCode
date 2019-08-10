@@ -7,6 +7,7 @@ class Solution {
         int overFlow = 0;
         int numFlag=0;
         int positiveFlag=0;
+        //flag作为符号为的作用是，防止出现“+-2”等不规范输入的出现
         int flag = 0;
         int error =0;
         StringBuilder str2 = new StringBuilder();
@@ -33,15 +34,17 @@ class Solution {
                 break;
             }
         }
+        //error的出现在"+-、数字"之前先出现了字母，因此是错误字符串，直接返回0
         if(error == 1)
             return 0;
         int sum = 0;
+        //判断str2是否是空串
         if(str2.length()<=0)
             return 0;
-        if(str2.charAt(0)<='9' && str2.charAt(0)>='0'){
-            sum += (str2.charAt(0) - '0');
-        }
+        //若不为空，则先提取第一个元素数值，之后进行先乘10，再加下一位的迭代操作
+        sum += (str2.charAt(0) - '0');
         for(int i=1;i<str2.length();i++){
+            //判断是否在迭代计算数值的时候有溢出，若溢出，标记位置1，后退出
             int num = (str2.charAt(i)-'0');
             if(sum>Integer.MAX_VALUE/10 || (sum==Integer.MAX_VALUE/10 && num>7)){
                 overFlow =1;
