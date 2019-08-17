@@ -47,6 +47,7 @@ class Solution {
         else if(breakFlag == 0){
             sum += 1;
         }
+	    //Create StringBuilder Class to collect the output chars.
         StringBuilder str1 = new StringBuilder();
         for(int i=0;i<sum;i++){
             str1.append(strs[0].charAt(i));
