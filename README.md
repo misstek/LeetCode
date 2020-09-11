@@ -1,7 +1,7 @@
 # LeetCode
 Create to record every line of LeetCode
 
-|#|Title|Difficulty|Solution|Complete date|Time spent|Checked answer
+|#|Title|Difficulty|Solution|Complete date|Time spent|Checked answer|
 |--|--------------|----|----|------|----|
 |001|Two Sum|Easy|Java|2019.08.03|60mins|
 |002|Add Two Numbers|Medium|Java|2019.08.04|60mins|
