@@ -1,7 +1,7 @@
 # LeetCode
 Create to record every line of LeetCode
 
-|#|Title|Difficulty|Solution|Complete date|Time spent|
+|#|Title|Difficulty|Solution|Complete date|Time spent|Checked answer
 |--|--------------|----|----|------|----|
 |001|Two Sum|Easy|Java|2019.08.03|60mins|
 |002|Add Two Numbers|Medium|Java|2019.08.04|60mins|
@@ -13,3 +13,4 @@ Create to record every line of LeetCode
 |012|Integer to Roman|Medium|Java|2019.08.14|20mins|
 |013|Roman to Integer|Easy|Java|2019.08.12|15mins|
 |014|Longest Common Prefix|Easy|Java|2019.08.15|50mins|
+|474|Ones and Zeroes|Medium|Java|2020.09.11|30mins|✅
