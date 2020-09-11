@@ -2,7 +2,7 @@
 Create to record every line of LeetCode
 
 |#|Title|Difficulty|Solution|Complete date|Time spent|Checked answer|
-|--|--------------|----|----|------|----|
+|--|--------------|----|----|------|----|-|
 |001|Two Sum|Easy|Java|2019.08.03|60mins|
 |002|Add Two Numbers|Medium|Java|2019.08.04|60mins|
 |003|Longest Substring Without Repeating Characters|Medium|Java|2019.08.05|60mins|
