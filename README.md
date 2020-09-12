@@ -13,4 +13,5 @@ Create to record every line of LeetCode
 |012|Integer to Roman|Medium|Java|2019.08.14|20mins|
 |013|Roman to Integer|Easy|Java|2019.08.12|15mins|
 |014|Longest Common Prefix|Easy|Java|2019.08.15|50mins|
-|474|Ones and Zeroes|Medium|Java|2020.09.11|30mins|✅
+|474|Ones and Zeroes|Medium|Java|2020.09.11|30mins|✅|
+|102|Binary Tree Level Order Traversal|Medium|Java|2020.09.12|25mins|✅|
